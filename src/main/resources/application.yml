@@ -1,0 +1,17 @@
+server:
+  port: 8080
+
+spring:
+    security:
+        oauth2:
+            client:
+                provider:
+                    tempo:
+                        token-uri: https://api.tempo.io/oauth/token/
+                registration:
+                    tempo:
+                        authorization-grant-type: client_credentials
+                        client-id: clientId
+                        client-secret: clientSecret
+
+
